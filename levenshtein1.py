@@ -34,7 +34,7 @@ def Ltav2(str1, str2, h1, h2):
             elif str1[i-1] == str2[j-1]:
                 T[i][j] = T[i-1][j-1]
             # ha az utolsó karakterek különböznek, akkor
-            # a három művelet közül a minimális kötségűt
+            # a három művelet közül a minimális költségűt
             # választjuk
             else:
                 T[i][j] = 1 + min(T[i][j-1], # beszúr
